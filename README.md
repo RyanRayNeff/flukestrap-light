@@ -1,3 +1,10 @@
+# FlukeStrap Light
+This is Bootstrap, styled for Fluke.  It's meant to be used for one-off landing pages that need to be responsive.  The Fluke styling is added via variables.less, and compiled into flukestra-light.css. Your custom styling should go in custom.less. If you don't have a LESS workflow setup, and you just need a quick and dirty compiler, I recommend [Prepros](https://prepros.io/). 
+
+This is a quick build, and needs further refinement, but most of the basic stuff is here. You can see most of the Bootstrap elements on one page, dist/flukestrap-light-starter-template-v2.html.
+
+**I am aware that I misspelled "lite" - please don't make fun of me. -RRN**
+
 # [Bootstrap](http://getbootstrap.com)
 [![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
 ![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
