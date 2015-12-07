@@ -3,7 +3,7 @@ This is Bootstrap, styled for Fluke.  It's meant to be used for one-off landing 
 
 This is a quick build, and needs further refinement, but most of the basic stuff is here. You can see most of the Bootstrap elements on one page, dist/flukestrap-light-starter-template-v2.html.
 
-**I am aware that I misspelled "lite" - please don't make fun of me. -RRN**
+*I am aware that I misspelled "lite" - please don't make fun of me. -RRN*
 
 # [Bootstrap](http://getbootstrap.com)
 [![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
