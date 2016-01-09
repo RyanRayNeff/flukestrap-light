@@ -29,54 +29,55 @@
       /* this style and selector are unrelated to bootstrap, this doc 
       its just to make easier to read */
       .bs-docs-section {
-          border-top: 1px solid gray;
-        }
-      </style>
+        border-top: 1px solid gray;
+      }
+    </style>
 
-    </head>
-    <body>
+  </head>
+  <body>
 
-      <nav>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a href="../" class="navbar-brand"><img alt="" src="images/fluke-logo.gif"></a>
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div><!-- /.navbar-header -->
-            <div class="navbar-collapse collapse" id="navbar-main">
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="sections">Sections<span class="caret"></span></a>
-                  <ul class="dropdown-menu" aria-labelledby="sections">
-                    <li><a class="list-group-item" href="#navbar">Navbar</a></li>
-                    <li><a class="list-group-item" href="#buttons">Buttons</a></li>
-                    <li><a class="list-group-item" href="#typography">Typography</a></li>
-                    <li><a class="list-group-item" href="#tables">Tables</a></li>
-                    <li><a class="list-group-item" href="#forms">Forms</a></li>
-                    <li><a class="list-group-item" href="#navs">Navs</a></li>
-                    <li><a class="list-group-item" href="#indicators">Indicators</a></li>
-                    <li><a class="list-group-item" href="#progress-bars">Progress bars</a></li>
-                    <li><a class="list-group-item" href="#containers">Containers</a></li>
-                    <li><a class="list-group-item" href="#dialogs">Dialogs</a></li>
-                  </ul>
-                </li>
-              </ul>
+    <nav>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="../" class="navbar-brand"><img alt="" src="images/fluke-logo.gif"></a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div><!-- /.navbar-header -->
+          <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="sections">Sections<span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="sections">
+                  <li><a class="list-group-item" href="#navbar">Navbar</a></li>
+                  <li><a class="list-group-item" href="#buttons">Buttons</a></li>
+                  <li><a class="list-group-item" href="#typography">Typography</a></li>
+                  <li><a class="list-group-item" href="#tables">Tables</a></li>
+                  <li><a class="list-group-item" href="#forms">Forms</a></li>
+                  <li><a class="list-group-item" href="#navs">Navs</a></li>
+                  <li><a class="list-group-item" href="#indicators">Indicators</a></li>
+                  <li><a class="list-group-item" href="#progress-bars">Progress bars</a></li>
+                  <li><a class="list-group-item" href="#containers">Containers</a></li>
+                  <li><a class="list-group-item" href="#dialogs">Dialogs</a></li>
+<li><a class="list-group-item" href="#html5-picture">HTML5 Picture tags</a></li>
+                </ul>
+              </li>
+            </ul>
 
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" target="_blank">Built With Bootstrap</a></li>
-              </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" target="_blank">Built With Bootstrap</a></li>
+            </ul>
 
-            </div>
-          </div><!-- /.container -->
-        </div><!-- /.navbar -->
-      </nav>
+          </div>
+        </div><!-- /.container -->
+      </div><!-- /.navbar -->
+    </nav>
 
 
-      <div class="container">
+    <div class="container">
 
 
 
@@ -1306,11 +1307,50 @@
    </div><!-- /.bs-docs-section -->
 
 
+<!-- Indicators
+  ================================================== -->
+  <div class="bs-docs-section">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h1 id="html5-picture">HTML5 Picture tags</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-6">
+        <div class="bs-component">
+          <h2>Look at this adorable cat. Now resize your browser - More adorable cats!</h2>
+          <p class="alert alert-danger">
+              Note: For your convenience, the Flukestrap breakpoints have been added to this picture tags media queries. Using <code>&lt;picture&gt;</code> tags instead of the bootstrap show/hide helper classes will speed up your page loads. This ensures you are NOT loading images that are not going to be displayed.
+            </p>
+          
+          <picture >
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <!-- Desktop Large -->
+            <source srcset="http://lorempixel.com/400/400/cats/1" media="(min-width: 1280px)" />
+            <!-- Desktop Medium -->
+            <source srcset="http://lorempixel.com/300/300/cats/2" media="(min-width: 1033px) and (max-width: 1279px)" />
+            <!-- Tablet -->
+            <source srcset="http://lorempixel.com/200/200/cats/3" media="(min-width: 768px) and (max-width: 1032px)" />
+            <!-- Mobile -->
+            <source srcset="http://lorempixel.com/150/150/cats/4" media="(max-width: 767px)" />
+            <!--[if IE 9]></video><![endif]-->
+            <!-- Fallback for unsupported browsers -->
+            <img  class="lazyload" src="http://lorempixel.com/100/100/cats/5" alt="" title="" />
+          </picture>
 
 
- </div><!-- /.container -->
+        </div>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.bs-docs-section -->
 
- <footer class="footer">
+</div><!-- /.container -->
+
+<footer class="footer">
   <div class="container">
     <p class="text-muted">Place sticky footer content here.</p>
   </div>
