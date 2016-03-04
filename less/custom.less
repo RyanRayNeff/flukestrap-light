@@ -5,8 +5,13 @@
 /* General styles
 -------------------------------------------------- */
 body {
-  padding-top: 50px;
+  padding-top: 80px; /* This makes room for the navbar */
 }
+
+.navbar-brand {
+    height: 80px; /* Overrides default bootstrap nabar height to accomodate fat fluke logo. */
+}
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -15,19 +20,19 @@ body {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
+// html {
+//   position: relative;
+//   min-height: 100%;
+// }
+// body {
+//   /* Margin bottom by footer height */
+//   margin-bottom: 60px;
+// }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: @fluke-button-hover;
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   /* Set the fixed height of the footer here */
+//   height: 60px;
+   background-color: @fluke-button-hover;
 }
